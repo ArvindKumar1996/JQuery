@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.2.1.min.js"></script>
+	<title></title>
+	
+
+
+	<script>
+	$(document).ready(function(){
+
+$("#btn1").click(function(){
+$("#box").addClass("design");
+
+});
+
+
+
+
+
+
+
+$("#btn2").click(function(){
+
+if($("#box").hasClass("design")){
+
+	$("#box").removeClass("design");
+}
+	else{
+		$("#box").addClass("design");
+	}
+
+});
+
+
+
+
+
+$("#btn3").click(function(){
+$("#box").toggleClass("design");
+
+});
+
+
+
+
+$("#btn4").one("click",function(){ 
+var text="jQuery         ";
+$("p").prepend(text);
+
+});
+
+
+$("#btn5").click(function(){
+
+	var text="jQuery "
+$(":text").after(text);
+
+
+});
+
+
+
+	});
+
+
+	</script>
+
+
+
+
+
+
+<style>
+#box{
+
+border:2px solid;
+height:200px;
+
+}
+.design{
+	background:yellow;
+}
+</style>
+
+</head>
+<body>
+<div id="box">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+</div><br/>
+<input type="text"><br/>
+<input type="checkbox"><br/>
+<a href="www.gmail.com" title="gmail"> Gmail</a>
+<button id="btn1">apply class</button>
+<button id="btn2">toggle class</button>
+<button id="btn3">toggle class through function</button>
+<button id="btn4">prepend</button>
+<button id="btn5">after</button>
+</body>
+</html>

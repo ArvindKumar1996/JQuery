@@ -1,0 +1,102 @@
+<!--addClass----->
+<html>
+<head>
+     <script src="jquery-3.3.1.min.js"></script>
+ <script>
+        $(document).ready(function(){
+		$("#btn").click(function(){
+		  $("#box").addClass("design");    
+	     });
+		 $("#btn2").click(function(){
+		 if($("#box").hasClass("design"))
+		 {
+		     $("#box").removeClass("design"); 
+		 }
+		 else{
+		  $("#box").addClass("design"); 
+              }		  
+	     });
+		 $("#btn3").click(function(){
+		    $("#box").toggleClass("design");
+		 });
+		 $("#btn4").click(function(){
+		 var text=$("p").clone().text();
+		 $("p").append(text);
+		 });
+		 $("#btn5").click(function(){
+		 var text="Jquery       ";
+		 $("p").prepend(text);
+		 });
+		 $("#btn5").one("click",function(){
+		 var text="Jquery       ";
+		 $("p").prepend(text);
+		 });
+		 $("#btn6").click(function(){
+		 var text="Jquery       ";
+		 //$("input").after(text);
+		 $(":text").after(text);
+		 });
+		 $("#btn7").click(function(){
+		 $("#box").empty();
+		 });
+		 $("#btn8").click(function(){
+		 $("#box").remove();
+		 });
+		 $("#btn9").click(function(){
+		 $("#box").children().css("background","red");
+		 });
+		  $("#btn10").click(function(){
+		 $("#box").find(".j").css("background","red");
+		 });
+		});
+ </script>
+ <style>
+ #box{
+     border:2px solid red;
+	 height:300px;
+	 width:800px;
+ }
+ .design{
+       background:yellow;
+ }
+ </style>
+</head>
+<body>
+      <div id="box">
+	  <p>
+	    asshdodnxoashucfuaso;gcfucgfaewghweythewy8rv4eytvbuiyiiiiiiiiiiiiiiiiiiifasffvfkaaaaaaak
+		AGIIIIIIIIEBTYGRBYRRRRRAWEeeGEuewguewfgrbcbyiercewbrytc icruyu3tryy3w hcruiewgirciwe  ric3
+		clhgfuiewlgil hcuoHL  YHCfuoew hfuoEH UO;EHFUEWF EWFHUEWO UOewh.
+	  </p>
+	  <p  class="j">
+	    asshdodnxoashucfuaso;gcfucgfaewghweythewy8rv4eytvbuiyiiiiiiiiiiiiiiiiiiifasffvfkaaaaaaak
+		AGIIIIIIIIEBTYGRBYRRRRRAWEeeGEuewguewfgrbcbyiercewbrytc icruyu3tryy3w hcruiewgirciwe  ric3
+		clhgfuiewlgil hcuoHL  YHCfuoew hfuoEH UO;EHFUEWF EWFHUEWO UOewh.
+	  </p>
+	  </div>
+	  <p>
+	    asshdodnxoashucfuaso;gcfucgfaewghweythewy8rv4eytvbuiyiiiiiiiiiiiiiiiiiiifasffvfkaaaaaaak
+		AGIIIIIIIIEBTYGRBYRRRRRAWEeeGEuewguewfgrbcbyiercewbrytc icruyu3tryy3w hcruiewgirciwe  ric3
+		clhgfuiewlgil hcuoHL  YHCfuoew hfuoEH UO;EHFUEWF EWFHUEWO UOewh.
+	  </p>
+	  <br><br>
+	  <input type="text" />
+	  <br><br>
+	  <input type="checkbox" />
+	  <button id="btn">Add Class</button>
+	  <br><br>
+	  <button id="btn2">Toggle Class</button>
+	  <button id="btn3">Toogle Class function</button><br><br>
+	  <button id="btn4">Clone Text Append</button>
+	  <br><br>
+	  <button id="btn5">Prepend Text</button><br><br>
+	  <button id="btn6">After</button>
+	  <br></br>
+	  <button id="btn7">Empty</button>
+	  <br><br>
+	  <button id="btn8">Remove</button>
+	  <button id="btn9">Child</button>
+	  <button id="btn10">Find</button>
+	  
+</body>
+</html>

@@ -1,0 +1,103 @@
+<html>
+  <head>
+         	<script src="jquery-3.3.1.min.js"></script>
+			<script>
+			         $(document).ready(function(){
+					    //$(".child1").siblings().css("border","1px solid red");
+						//$(".child1").next().css("border","1px solid red");
+						//$(".child1").nextAll().css("border","1px solid red");
+						//$(".child1").nextUntil(".child3").css("border","1px solid red");
+						//$(".child3").prev().css("border","1px solid red");
+						//$(".child3").prevAll().css("border","1px solid red");
+						//$(".child3").prevUntil(".child1").css("border","1px solid red");
+						  //$(".child1").parent().css("border","1px solid red");
+						 // $(".child1").parents().css("border","1px solid red");
+						 //$(".child1").parentsUntil("parent").css("border","1px solid red");
+						 //$(".parent").children().css("border","1px solid red");
+						// $(".parent").find("*").css("border","1px solid red");
+						// $(".parent").find("*").css("border","1px solid red");
+						//$(".parent").first().css("border","1px solid red");
+						//$(".parent").last().css("border","1px solid red");
+						//$(".parent").eq(1).css("border","1px solid red");
+						//$(".parent").eq(0).css("border","1px solid red");
+						//$("div").not(".parent").css("border","1px solid red");
+						//$("li").slice("2").css("background","yellow");
+						//$("#btn").click(function(){
+						  /*   $("li").each(function(){
+							     alert($(this).text());
+							 })  */
+							
+							$("#search").keyup(function(){
+							     var text=$("#search").val().toLowerCase();
+								 $("li").filter(function(){
+								 $(this).toggle($(this).text().toLowerCase().indexOf(text)>-1);
+							});
+						        });
+						//});
+						
+						/* if($("#list").is("ul"))
+						alert("true");
+						else 
+						alert("false");
+					 }); */
+					 
+					 //$("p").has("span").css("background","yellow");
+					  //$("p").filter(".intro").css("background","yellow");
+					    /*  var text=$("p").get(0);
+						  alert(text.nodeName);
+						  alert(text.innerHTML);*/
+					 });
+			</script>
+      <style>
+	        #grandfather{
+			            width:500px;
+						height:500px;
+						border:1px solid;
+			}
+			.parent{
+			            width:400px;
+						height:200px;
+						border:1px solid;
+						margin:30px 0px 0px 40px;
+			}
+			.child1,.child2,.child3{
+			            width:300px;
+						height:25px;
+						border:1px solid;
+						margin:30px 0px 0px 40px;
+						text-align:center;
+			}
+	  </style>
+  </head>
+  <body>
+          <!--
+          <div id="grandfather"> GrandFather
+		           <div class="parent">Parent
+				                 <div class="child1">Child1</div>
+				                 <div class="child2">Child2</div>
+				                 <div class="child3">Child3</div>
+				    </div>
+		           <div class="parent">Parent
+				                 <div class="child1">Child1</div>
+				                 <div class="child2">Child2</div>
+				   </div>
+		  </div>   -->
+		  
+		  <input type="text" id="search"/>
+		  <br><br>
+		  <input type="button" id="btn" value="Click Here">
+		  <ul id="list">
+		       <li>Hyundai</li>
+		       <li>Honda</li>
+		       <li>Maruti</li>
+		       <li>BMW</li>
+			   <li>Maruti</li>
+		       <li>BMW</li>
+			   <li>Maruti</li>
+		       <li>BMW</li>
+		  </ul>
+		  <p>This is paragraph.</p>
+		  <p class="intro">This is paragraph.</p>
+		  <p class="intro">This is<span>paragraph.</span></p>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!--WAP a program to print plainText and colored text by using text() and html() method-->
+
+<html>
+<head>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+	        //Click event of first button
+			$(document).ready(function(){
+			$("#b1").click(function()
+			{
+			var p1=$("#p1").text();
+			var p2=$("#p2").text();
+			$("#p1").text(p2);
+			$("#p2").text(p1);
+			})
+			//Second button click event
+			$("#b2").click(function()
+			{
+			var p1=$("#p1").html();
+			var p2=$("#p2").html();
+			$("#p1").html("<span style='color:red;font-size:30px;'>"+p2+"</span>");
+			$("#p2").html("<span style='color:blue;font-size:30px;'>"+p1+"</span>");
+			})
+			})
+			
+	</script>
+</head>
+<body>
+First Text : <p id="p1">This is First Text Line</p><br><br>
+Second Text : <p id="p2">This is Second Text Line</p><br><br>
+<button id="b1">Convert Text Only</button>
+<button id="b2">Color Text</button>
+</body>
+</html>

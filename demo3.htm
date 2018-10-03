@@ -1,0 +1,18 @@
+<!--WAP JQuery to read and print value of textbox-->
+<html>
+<head>
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+     $(document).ready(function(){
+	     $("#btn1").click(function(){
+		  var name=$("#txt1").val();
+		  alert("Hello! Your name is : "+name);
+		 })
+	   })
+</script>
+</head>
+<body>
+Enter Your Name: <input type="text" id="txt1" /><button id="btn1" >
+Click Now</button>
+</body>
+</html>

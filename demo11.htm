@@ -1,0 +1,31 @@
+<!--use of css() method in jquery-->
+<html>
+<head>
+ <script src="jquery-3.3.1.min.js"></script>
+ <script>
+        $(document).ready(function(){
+         $("#b1").click(function(){
+		 $("#d1").css("background","red");
+		 })
+		 //multiple css
+		 $("#b2").click(function(){
+		 $("#d1").css({"background":"navy","border":"5px solid red","border-radius":"50%"});
+		 })
+		});
+ </script>
+ <style>
+ #d1{
+       width:300px;
+	   height:300px;
+	   border:3px dotted red;
+	   background:yellow;
+ }
+ </style>
+</head>
+<body>
+<div id="d1"></div><br><br>
+  <img src="4.jpg" height="300px" width="1000px" style="display:none"/><br><br>
+  <button id="b1">Single CSS Property</button>
+  <button id="b2">Multiple CSS Property</button>
+</body>
+</html>

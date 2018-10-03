@@ -1,0 +1,20 @@
+<!--My First Program in jquery-->
+<html>
+    <head>
+    </head>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+	      $(document).ready(function(){
+              var s;
+		      $("#btn").click(function(){
+               s= $("#txt").val();
+                   console.log(s);
+              });
+              
+		  });
+	</script>
+	<body>
+        <input type="text" id="txt">
+        <button id="btn">Click</button>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!--  Use of attr() and prop() method in jquery -->
+
+<html>
+<head>
+ <script src="jquery-3.3.1.min.js"></script>
+ <script>
+         $(document).ready(function(){
+         $("ck1").change(function(){
+		 var btn=$("button").attr("disabled");
+		  if(btn=="disabled")
+		  {
+		   $("button").attr("disabled",false);    
+		  }
+		  else{
+		   $("button").attr("disabled",true);  
+		  }
+		 )}
+		 })
+ </script>
+</head>
+<body>
+        <input type="checkbox" id="ck1" /> I Agree <a href="#">With Your Terms and Conditions</a>  
+       <br><br>
+    <button disabled>Register Now</button>	   
+</body>
+</html>

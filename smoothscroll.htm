@@ -1,0 +1,39 @@
+<html>
+<head>
+      <script src="jquery-3.3.1.min.js"></script>
+	  <script>
+	       $(document).ready(function(){
+		      $("a").click(function(){
+			        event.preventDefault();
+					var target=this.hash;
+					$target=$(target);
+				$("html,body").animate({'scrollTop':$target.offset().top},1000,'swing');
+			  });
+		   });
+	  </script>
+
+  <style>
+     a{
+	     text-decoration:none;
+	 } 
+	 .section{
+	     height:450px;
+	 }
+	 #section1{background:white;}
+	 #section2{background:pink;}
+	 #section3{background:green;}
+	 #section4{background:yellow;}
+	 #section5{background:red;}
+  </style>
+</head>
+     <div id="section1" class="section">
+	 <h2 style="color:black"><a href="#section2">Section1</a></h2></div>
+	 <div id="section2" class="section">
+	 <h2 style="color:black"><a href="#section3">Section2</a></h2></div>
+	 <div id="section3" class="section">
+	 <h2 style="color:black"><a href="#section4">Section3</a></h2></div>
+	 <div id="section4" class="section">
+	 <h2 style="color:black"><a href="#section5">Section4</a></h2></div>
+	 <div id="section5" class="section">
+	 <h2 style="color:black"><a href="#section1">Section5</a></h2></div>
+</html>

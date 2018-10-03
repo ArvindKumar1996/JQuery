@@ -1,0 +1,313 @@
+<!-----------------------------JQUERY------------------------------->
+INTRODUCTON:
+==================
+=>JQuery is a JavaScript library.
+=>JQuery is developed completely based on JavaScript.
+=>JQuery is an Open Source JavaScript library.
+=>JQuery is not replacement of JavaScript. It simplifies the JavaScript tasks.
+=>JQuery is across-platform JavaScript library designed to simplify the client-side scripting of HTML.
+=>JQuery is used to overcome the load on server. Many tasks can be performed in client side by using JQuery.
+=>It's punch line is "Write less do more". 
+
+=>Created in 2006
+               by:John Rasig
+			   
+FEATURES:
+===========
+=>Simple
+=>DOM Traversing
+=>DOM Manipulation
+=>Event Handling
+=>Styles Modification
+=>Effects and Animation
+=>AJAX Support
+=>JQuery UI
+=>CSS3 Compliant
+=>Light Weight Library
+=>Cross Browser Support
+=>Interpreted
+
+
+
+======================================================
+How we can write JQuery into HTML Page:
+----------------------------------------
+1) JQuery():-
+
+It contains document object and it is also known as Factory method.
+
+We can write "$" symbol for factory method of jquery.
+
+$()=JQuery()
+
+ready():-
+-----------
+It have a anonymous method and that method called when page load on browser.
+
+
+
+Syntax of JQuery:
+-----------------
+            $(document).ready(function(){
+			    //write code here.....
+			})      
+			
+DOM methods in jquery:-
+----------------------------
+
+1)val()
+2)text()
+3)html()
+4)attr()
+5)prop()    ..etc
+
+1)val() :-
+---------------
+it is used for get or set the value into the input control(textbox,checkbox,button,dropdownlist,....etc).
+
+
+for getting value:
+
+var VariableName=$("#IdName").val();
+
+
+Set Value:
+--------------
+$("#IdName").val(VariableName);
+
+
+Note:
+---------
+
+text() and html() method is same like as innerText and innerHTMLproperty in JavaScript.
+
+2)  text():
+------------
+it is used for plain result.
+
+3)  html():
+------------
+it converts html controls into html formate and other text display in browser.
+
+Task:
+==========
+1) Prime number or not o/p on div 
+2) Factorial number  o/p on div 
+3) Palindrom
+4) Reverse number
+
+
+
+
+===============================================Project:============================================
+===================================================================================================
+1) Generons -CRM
+2) Medicounsel
+3) Polyguide 
+4) 
+
+
+
+some more methods in jquery:
+===============================================================
+
+1) attr()
+2) prop()
+
+
+attr():-
+--------------
+It holds the attributes of html element control and return the value of string type from that attributes.
+
+
+Syntax:
+        
+		for get property Value :-
+		-------------------------
+		
+var VarName=$("Selector").attr("PropertyName");     //which is fixed is property   and which is not is attribute
+
+For set the value
+----------------------
+$("Selector").attr("PropertyName","value");
+
+2) prop():- It is same like attr() method but it return the value of boolean (true/false) type.
+
+
+Syntax:
+--------------
+
+$("Selector").prop(PropertyName,VarName).
+
+
+Aniamtion in jquery:
+========================================
+for animation in jquery , we can use built -in methods some of them is given below:-
+
+1) show()
+2) hide()
+3) toggle()
+4) css()
+5) fadeIn()
+6) fadeOut()
+7) fadeToggle()
+8) slideDown()
+9) slideUp
+10)slideToggle()
+11)animate()     ..............etc.
+
+
+
+1) show():-
+---------------------
+show() method is used to show of any html control but that control must be hide. for hiding of that control we can use display property of css.
+
+syntax:
+----------------
+     $("Selector").show(Delay in MiliSecond);
+
+2) hide():
+---------------
+This is used for hiding of any html control.
+
+syntax:
+-----------
+$("Selector").hide(Delay in MiliSecond);
+
+3) toggle():
+--------------
+
+It do act of both methods (show() and hide()).if any control is hide then it show otherwise hide of that controls.
+
+
+4) css():-
+----------------
+
+  This method is used for decoration, we can apply single or multiple css properties is differ.
+
+syntax for single property:
+-----------------------------
+$("Selector").css("PropertyName","Value");
+
+
+Syntax for multiple properties:
+----------------------------------
+$("Selector").css({"Property1":"Value1","Property2":"Value2",.........................});
+
+fadeIn():-
+----------------------
+This is also used for animation and we can make more attractive designe by using fadeIn() method.
+
+syntax:-
+-----------------
+$("selector").fadeIn(Delay in MileSecond);
+
+2) fadeOut():-
+------------------------
+$("selector").fadeOut(Delay in MileSecond);
+
+3) fadeToggle():-
+-----------------------
+$("selector").fadeToggle(Delay in MileSecond);
+
+1) slideDown():
+----------------------
+
+$("selector").slideDown(Delay);
+
+
+2) slideUp():-
+-------------------
+$("selector").slideUp(Delay);
+
+2) slideToggle():-
+-------------------
+$("selector").slideToggle(Delay);
+
+animate():-
+-------------------------
+This is also used for animation .
+
+Syntax:
+-------------
+
+$("selector").animate({property:"value"},delay);
+
+
+
+
+
+task:
+===================================
+=>Slider
+  
+  
+Ancesstor:
+============
+parent()
+parents()
+parentsUntil()
+
+
+next()
+nextAll()
+prev()
+prevNext()
+
+
+
+
+match()
+test()
+
+
+task:
+=========================
+Registration form:
+=======================
+
+
+
+
+=================================Slider==========================================
+
+1)   Automatic Slider
+2)   Carousal Slider
+
+
+mouse Events:-
+==============================
+=>mouseover
+=>mouseout
+=>mouseenter
+=>mouseleave
+=>mousemove
+=>mouseup
+=>mousedown
+=>hover
+=>click
+=>dblclick
+
+Keyboard Event:-
+==================
+=>keyup
+=>keydown
+=>keypress
+
+
+form event:-
+====================
+=>submit
+=>change
+=>focus
+=>blur
+=>focusin
+=>focusout
+=>select 
+
+Window / DOM Event:-
+===================
+=>ready
+=>scroll
+=>resize
+

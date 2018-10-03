@@ -1,0 +1,31 @@
+<!--use of show() ,hide()  and toggle() method in jquery-->
+<html>
+<head>
+ <script src="jquery-3.3.1.min.js"></script>
+ <script>
+        $(document).ready(function(){
+		//button click event
+		$("#b1").click(function()
+		{
+		   $("img").slideDown(3000);
+		});
+		//click event of button
+		$("#b2").click(function()
+		{
+		$("img").slideUp(3000);
+		});
+		//click event of button
+		$("#b3").click(function()
+		{
+		$("img").slideToggle(3000);
+		});
+		});
+ </script>
+</head>
+<body>
+  <img src="4.jpg" height="300px" width="1000px" style="display:none"/><br><br>
+  <button id="b1">SlideDown</button>
+  <button id="b2">SlideUp</button>
+  <button id="b3">SlideToggle</button>
+</body>
+</html>

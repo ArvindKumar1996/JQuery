@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+         $(document).ready(function(){
+            //  $("#btn1").click(function(){
+            //     $("#img").animate({
+            //      marginLeft:"1030px",
+            //      marginTop:"410px",
+            //     }, 3000);
+           
+            // $("#btn2").click(function(){
+            //      $("#img").fadeIn();
+            // });
+            // $("#btn3").click(function(){
+            //      $("#img").fadeOut();
+            // });
+            // $("#btn4").click(function(){
+            //       $("#img").fadeToggle(1000);
+            //  });
+             $("#btn5").click(function(){
+                  $("#img").fadeTo(1000,0.4);
+             });
+         });
+    </script>
+</head>
+<body>
+      <button id="btn1">animate</button>
+      <button id="btn2">fadeIn</button>
+      <button id="btn3">fadeOut</button>
+      <button id="btn4">fadeToggle</button>
+      <button id="btn5">fadeTo</button>
+        <br><br>
+        <!--<img id="img" src="1.jpg" style="width:300px;height:200px;display:none;">-->
+        <img id="img" src="1.jpg" style="width:300px;height:200px;">
+        
+</body>
+</html>

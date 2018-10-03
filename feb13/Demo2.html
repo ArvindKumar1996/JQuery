@@ -1,0 +1,25 @@
+<html>
+<head>
+<script src="jquery-3.3.1.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$("#b1").click(function(){
+$("img").fadeIn(5000);
+})
+$("#b2").click(function(){
+$("img").fadeOut(5000);
+})
+$("#b3").click(function(){
+$("img").fadeToggle(5000);
+});
+});
+</script>
+</head>
+<body>
+<img src="img1.jpg" height="300px" width="800" style="display:none;"/><br><br>
+<button id="b1">FadeIn</button>
+<button id="b2">FadeOut</button>
+<button id="b3">FadeToggle</button>
+</body>
+</html>

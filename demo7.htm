@@ -1,0 +1,27 @@
+<input type="text" name="factroial4" id="factroial4" />
+ 
+  <br/>
+  
+ <button type="button" name="button" onclick="GetFactorial();" />
+  Calculate Factorial
+ </button>
+ 
+  <br/>
+  
+ <div id="result"></div> 
+ 
+ 
+<script src="jquery-3.3.1.min.js"></script>
+
+ <script>
+ function GetFactorial()
+   {
+  var value = $("#factroial4").val();
+     tempvalue = 1;
+     for ( i=value ; i>0 ;  i-- )
+      {
+         tempvalue *=  i ;
+      }
+  $("#result").html("Factorial of "+value+" is :"+tempvalue); 
+   }  
+ </script>

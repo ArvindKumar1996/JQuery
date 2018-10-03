@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery-3.3.1.min.js"></script>
+	<script>
+	      $(document).ready(function(){
+		    /*  $("#div").mouseenter(function(){
+                 $("#div").css("background","red");
+              });
+              $("#div").mouseleave(function(){
+                 $("#div").css("background","green");
+              }); 
+              $("#div").mousemove(function(){
+                 $("#div").text(event.pageX+","+event.pageY);
+              });*/
+             /* $("#div").hover(function(){
+                $("#div").css("background","red");
+              },
+              function(){
+                $("#div").css("background","green");
+              }); */
+             /* $("#div").dblclick(function(){
+                 $("#div").css("background","green");
+              }); */
+              var i=0;
+              $("#txt").keyup(function(){
+                 $("#txt").css("background","green");
+                 i++;
+                 $("#div").text(i);
+              });
+              $("#txt").keydown(function(){
+                 $("#txt").css("background","red");
+                 i++;
+                 $("#div").text(i);
+              });
+              $("#txt").keypress(function(){
+                 $("#txt").css("background","teal");
+                 i++;
+                 $("#div").text(i);
+              });
+		  });
+	</script>
+</head>
+<body>
+    <div id="div" style="width:500px;height:200px; border:1px solid;"></div><br>
+    <input type="text" id="txt" style="width:300px;height:50px;">
+</body>
+</html>
